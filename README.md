@@ -40,13 +40,14 @@ public class App extends Application {
     		labelStand.setText("Stand");
     		
     		TextField textFeld = new TextField();
-    		textFeld.setPromptText("Name eingeben...");
+    		textFeld.setText("Peter Schmitz");
     		
     		ComboBox<String> boxJahre = new ComboBox<>();
     		boxJahre.setEditable(true);
     		boxJahre.setMaxWidth(70);
     		boxJahre.getItems().addAll("1981","1980","1979");
-    		
+    		boxJahre.getSelectionModel().selectFirst();
+    		    		
     		CheckBox checkBox = new CheckBox();
     		checkBox.setText("verheiratet");
     		checkBox.setSelected(true);
